@@ -1,0 +1,6 @@
+name: Google/Gmail's 3D Loader
+description: Google's 3D "Flipping-Circle" Loader as used in Gmail and other Google Products using pure CSS.
+authors:
+ - Regis Gaughan, III
+resources:
+normalize_css: no
