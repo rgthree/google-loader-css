@@ -1,8 +1,27 @@
+/* Added for Demo */
+.container {padding:25px; font-size:64px; text-align:center;}
+
 /**
  * Google/Gmail's 3D Loader in Pure CSS
  * https://github.com/rgthree/google-loader-css
  * Regis Gaughan, III <http://regisgaughan.com>
  * MIT License
+ *
+ * Version: Bleeding
+ * Browser Support: https://github.com/rgthree/google-loader-css/blob/master/README.md
+ * Demo: http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle-bleeding
+ * Usage:
+ *  - Add this file to the <head> of your webpage
+ *  - Within the <body>, add this snippet:
+ *
+ *    <span class="gloader"></span>
+ *
+ *  - The gloader uses font-size and text-align to align itself.
+ *    For instance, if you place it within a `.container` element
+ *    with a `font-size:48px; text-align:center;` the gloader would
+ *    be 48px in diameter and aligned in the middle of you container
+ *    along with other inline/inline-block elements
+ *    
  */
 
 .gloader {
@@ -12,12 +31,12 @@
   animation:base 3s steps(1) 0s infinite; 
 }
 
-.gloader > * {
+.gloader::before, .gloader::after * {
   display:block; width:50%; height:100%;
   position:absolute; top:0%; left:0%; z-index:1;
 }
 
-.gloader > *:first-child {
+.gloader::before {
   left:auto; right:0px; z-index:2; border-radius:0em 0.5em 0.5em 0em;
   -webkit-transform-style:preserve-3d;
   -webkit-transform-origin:0px 50%;
@@ -27,7 +46,7 @@
   animation:flip 3s linear 0s infinite;
 }
 
-.gloader > *:last-child {
+.gloader::after {
   -webkit-animation:reveal 3s steps(1) 0s infinite;
   animation:reveal 3s steps(1) 0s infinite;
 }
