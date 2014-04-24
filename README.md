@@ -3,25 +3,33 @@ Google/Gmail's 3D Loader
 
 Google's 3D "Flipping-Circle" Loader as used in Gmail and other Google Products using pure CSS.
 
-| Example |
-|:---------------:|
-| ![Example](example.gif) |
+![Example](example.gif)
+
+## Example
+
+- Checkout the [jsFiddle](http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle)
 
 ## How To Use
 
-1. Download the [google-loader.css](google-loader.css) and host it on your webserver.
+1. Download the [google-loader.css](src/google-loader.css) and host it on your webserver.
 2. Link the css file in the `<head>` of your webpage
+
   ```html
 <link rel="stylesheet" type="text/css" media="all" href="google-loader.css">
   ```
-3. Add this html snippet where you would like to use your loader:  
+
+3. Add this html snippet where you would like to use your loader: 
+
   ```html
 <span class="gloader"><span></span><span></span></span>
-  ````
+  ```
+
 4. The `gloader` inherits from the font-size of your container using `em` units, and is of `display-inline-block` variety, so it will obey text-align. For instance, if you wanted your `gloader` to be 24px in diameter and center aligned, you could put it in a container element styled as:
+
   ```css
 font-size:24px; text-align:center;
   ```
+  
 
 ## Compatibility
 

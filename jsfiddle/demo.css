@@ -5,6 +5,9 @@
  * MIT License
  */
 
+/* Added for Demo */
+.container {padding:25px; font-size:64px; text-align:center;}
+
 .gloader {
   display:inline-block; width:1em; height:1em;
   position:relative; overflow:hidden; border-radius:0.5em; 
