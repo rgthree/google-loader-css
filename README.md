@@ -1,7 +1,7 @@
 #  Google/Gmail's 3D Loader
 
 | ![Example](example.gif) | Google's 3D "Flipping-Circle" Loader as used in Gmail and other Google Products using pure CSS. |
-|---|---|
+|:---:|:---|
 
 
 

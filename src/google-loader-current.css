@@ -21,6 +21,7 @@
  * 
  */
 
+
 .gloader {
   display:inline-block; width:1em; height:1em;
   position:relative; overflow:hidden; border-radius:0.5em; 
@@ -29,17 +30,18 @@
 }
 
 .gloader > * {
-  display:block; width:50%; height:100%;
-  position:absolute; top:0%; left:0%; z-index:1;
+  display:block; width:50%; height:100%; overflow:hidden;
+  position:absolute; top:0%; left:50%; z-index:1;
+  border-radius:0em 0.5em 0.5em 0em;
+  -webkit-transform-origin:0px 50%;
+  transform-origin:0px 50%;
 }
 
 .gloader > *:first-child {
-  left:auto; right:0px; z-index:2; border-radius:0em 0.5em 0.5em 0em;
+  z-index:2;
   -webkit-transform-style:preserve-3d;
-  -webkit-transform-origin:0px 50%;
   -webkit-animation:flip 3s linear 0s infinite;
   transform-style:preserve-3d;
-  transform-origin:0px 50%;
   animation:flip 3s linear 0s infinite;
 }
 
@@ -58,11 +60,11 @@
 }
 
 @-webkit-keyframes reveal {
-  0%   {background-color:#2159d6; -webkit-transform:translateX(0.5em);}
-  25%  {background-color:#d62408; -webkit-transform:translateX(0%); }
-  50%  {background-color:#ffcf00; -webkit-transform:translateX(0.5em);}
-  75%  {background-color:#21aa29; -webkit-transform:translateX(0%); }
-  100% {background-color:#2159d6; -webkit-transform:translateX(0.5em);}
+  0%   {background-color:#2159d6; -webkit-transform:rotate(0deg);}
+  25%  {background-color:#d62408; -webkit-transform:rotate(180deg);}
+  50%  {background-color:#ffcf00; -webkit-transform:rotate(0deg);}
+  75%  {background-color:#21aa29; -webkit-transform:rotate(180deg);}
+  100% {background-color:#2159d6; -webkit-transform:rotate(0deg);}
 }
 
 @-webkit-keyframes flip {
@@ -92,11 +94,11 @@
 }
 
 @keyframes reveal {
-  0%   {background-color:#2159d6; transform:translateX(1em);}
-  25%  {background-color:#d62408; transform:translateX(0%); }
-  50%  {background-color:#ffcf00; transform:translateX(1em);}
-  75%  {background-color:#21aa29; transform:translateX(0%); }
-  100% {background-color:#2159d6; transform:translateX(1em);}
+  0%   {background-color:#2159d6; transform:rotate(0deg);}
+  25%  {background-color:#d62408; transform:rotate(180deg);}
+  50%  {background-color:#ffcf00; transform:rotate(0deg);}
+  75%  {background-color:#21aa29; transform:rotate(180deg);}
+  100% {background-color:#2159d6; transform:rotate(0deg);}
 }
 
 /* Green >> DarkGreen | DarkBlue >> Blue >> DarkBlue | DarkRed >> Red >> DarkRed | DarkYellow >> Yellow >> DarkYellow | DarkGreen >> Green */
