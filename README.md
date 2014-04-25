@@ -1,9 +1,8 @@
-Google/Gmail's 3D Loader
-========================
+#  Google/Gmail's 3D Loader
 
-Google's 3D "Flipping-Circle" Loader as used in Gmail and other Google Products using pure CSS.
+| ![Example](example.gif) | Google's 3D "Flipping-Circle" Loader as used in Gmail and other Google Products using pure CSS. |
+|---|---|
 
-![Example](example.gif)
 
 
 ## How To Use
@@ -12,10 +11,10 @@ Google's 3D "Flipping-Circle" Loader as used in Gmail and other Google Products 
 2. Link the css file in the `<head>` of your webpage, and use
 
   ```html
-<link rel="stylesheet" type="text/css" media="all" href="google-loader.css">
+<link rel="stylesheet" type="text/css" media="all" href="google-loader-current.css">
   ```
 
-3. Add this html snippet where you would like to use your loader _(see different snipper for "bleeding" version below)_: 
+3. Add this html snippet where you would like to use your loader _(see different snippet for "bleeding" version below)_: 
 
   ```html
 <span class="gloader"><span></span><span></span></span>
@@ -30,11 +29,11 @@ Google's 3D "Flipping-Circle" Loader as used in Gmail and other Google Products 
 
 ## Versions & Browser Support
 
-| Support  | Link                                                         | Chrome | FireFox | IE  | Safari | Opera  | Example |
+| Support  | Link                                                         | Chrome | FireFox | IE | Safari | Opera | Example |
 |:---------|:-------------------------------------------------------------|:------:|:-------:|:---:|:------:|:------:|:-------:|
-| Bleeding | [google-loader-bleeding.css](src/google-loader-bleeding.css) |   26+  |   16+   | 10+ |  6.0+  |  12.1+ | [jsFiddle](http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle-bleeding) |
-| Current  | [google-loader-current.css](src/google-loader-current.css)   |    4+  |   16+   | 10+ |  4.0+  |  12.1+ | [jsFiddle](http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle-current) |
-| Old      | [google-loader-old.css](src/google-loader-old.css)           |    4+  |    5+   | 10+ |  4.0+  |  12.0+ | [jsFiddle](http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle-old) |
+| Bleeding | [google-loader-bleeding.css](src/google-loader-bleeding.css) | **26**   |   16    | 10 |  **6.0**   |  12.1 | [jsFiddle](http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle-bleeding) |
+| Current  | [google-loader-current.css](src/google-loader-current.css)   |    4   |   16    | 10 |  4.0   |  12.1 | [jsFiddle](http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle-current) |
+| Old      | [google-loader-old.css](src/google-loader-old.css)           |    4   |    **5**    | 10 |  4.0   |  **12.0** | [jsFiddle](http://jsfiddle.net/gh/get/library/pure/rgthree/google-loader-css/tree/master/jsfiddle-old) |
 
 _Compatibility derived from [caniuse.com](http://caniuse.com/#feat=css-animation). Not all mentioned browsers have been thoroughly tested._
 
@@ -53,7 +52,7 @@ The "bleeding" version of the google loader uses the smallest markup possible: _
 ```
 
 ### Current Browser Version
-The current version supports a wider range of browsers, but requires two elements be added as children to the. This is the widest support while still saving on CSS filesize. If you wat to support current versions of browsers you should [grab this version](src/google-loader-current.css).
+The current version supports a wider range of browsers, but requires two elements be added as children to the. This is the widest support while still saving on CSS filesize. If you want to support current versions of browsers you should [grab this version](src/google-loader-current.css).
 
 ```html
 <head>
